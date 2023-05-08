@@ -3,13 +3,15 @@ import { createGlobalStyle } from 'styled-components'
 const GlobalStyles = createGlobalStyle`
   :root {
     //* Primary
-    --Blue: hsl(246, 80%, 60%)
-    --Light-red: (work): hsl(15, 100%, 70%);
-    --Soft-blue: (play): hsl(195, 74%, 62%);
-    --Light-red: (study): hsl(348, 100%, 68%);
-    --Lime-green: (exercise): hsl(145, 58%, 55%);
-    --Violet: (social): hsl(264, 64%, 52%);
-    --Soft-orange: (self care): hsl(43, 84%, 65%);
+    --Blue: hsl(246, 80%, 60%) ;
+    --Light-red: hsl(15, 100%, 70%);
+    --Soft-blue: hsl(195, 74%, 62%);
+    --Light-red: hsl(348, 100%, 68%);
+    --Lime-green: hsl(145, 58%, 55%);
+    --Violet: hsl(264, 64%, 52%);
+    --Soft-orange: hsl(43, 84%, 65%);
+    --White-color: #fff;
+
     //* Neutral
     --Very-dark-blue: hsl(226, 43%, 10%);
     --Dark-blue: hsl(235, 46%, 20%);
@@ -148,6 +150,14 @@ const GlobalStyles = createGlobalStyle`
 
   #root {
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  body {
+    font-family: 'Rubik', sans-serif;
+    background-color: var(--Very-dark-blue);
   }
 `
 
