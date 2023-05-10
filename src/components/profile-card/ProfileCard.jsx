@@ -4,7 +4,7 @@ const ProfileCardStyled = styled('article')`
   background-color: var(--Dark-blue);
   display: grid;
   grid-template-rows: 2fr 1fr;
-  border-radius: 1.25rem;
+  border-radius: clamp(1.25rem, 2vw, 1.6rem);
   grid-row: 1 / 3;
 `
 
@@ -12,43 +12,40 @@ const UserProfileStyled = styled('div')`
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding: 2.5rem 2rem;
+  padding: clamp(2.5rem, 3vw, 5.2rem) clamp(2rem, 3vw, 3rem);
   background-color: var(--Blue);
-  border-radius: 1.25rem;
+  border-radius: clamp(1.25rem, 2vw, 1.6rem) clamp(1.25rem, 2vw, 1.5rem) 0 0;
 
   & img {
-    width: 4rem;
+    width: clamp(4rem, 4vw, 8rem);
     justify-content: flex-start;
   }
 
   @media (min-width: 56.25rem) {
     flex-direction: column;
-    padding: 2rem 0;
   }
 `
 const ProfileTitleStyled = styled('div')`
   display: flex;
   flex-direction: column;
   & h2 {
-    font-size: 1.5rem;
+    font-size: clamp(1.3rem, 2vw, 2.8rem);
     font-weight: 400;
-    @media (min-width: 56.25rem) {
-      font-size: 2rem;
-    }
   }
 
   & strong {
     font-weight: 300;
-    font-size: 0.7rem;
+    font-size: clamp(0.7rem, 1.3vw, 1.2rem);
   }
 `
 
 const ProfileNavegateStyled = styled('ul')`
   display: flex;
   justify-content: space-evenly;
-  padding: 1rem 0;
+  padding: clamp(1rem, 1vw, 2rem) 0;
   background-color: var(--Dark-blue);
-  border-radius: 0 0 1.25rem 1.25rem;
+  border-radius: 0 0 clamp(1.25rem, 2vw, 1.6rem) clamp(1.25rem, 2vw, 1.6rem);
+  padding: clamp(1rem, 1vw, 3rem);
 
   @media (min-width: 56.25rem) {
     flex-direction: column;
@@ -56,7 +53,7 @@ const ProfileNavegateStyled = styled('ul')`
 `
 
 const ProfileNavigateItemStyled = styled('li')`
-  font-size: 1rem;
+  font-size: clamp(1rem, 2vw, 4rem);
   cursor: pointer;
 `
 

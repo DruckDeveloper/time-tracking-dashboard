@@ -150,15 +150,17 @@ const GlobalStyles = createGlobalStyle`
 
   #root {
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   body {
     font-family: 'Rubik', sans-serif;
     background-color: var(--Very-dark-blue);
   }
+  
+   svg {
+    width: 100%;
+    display: block;
+  } 
 `
 
 export { GlobalStyles }

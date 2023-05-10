@@ -6,12 +6,12 @@ import { CardData } from '../../data/CartData'
 const SectionStyled = styled('div')`
   display: grid;
   color: var(--White-color);
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
   gap: 4rem;
-  grid-template-rows: repeat(6, 1fr);
-
-  @media (min-width: 56.25rem) {
-    grid-template-rows: repeat(2, 1fr);
+  padding: clamp(2rem, 5vw, 3rem);
+  @media (min-width: 93.75rem) {
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 `
 
